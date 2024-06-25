@@ -13,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col gap-16 justify-center items-center h-screen">
+    <div className="flex flex-col gap-16 justify-center items-center h-screen max-md:px-8">
       {!username ? (
         <form
           onSubmit={handleClick}
@@ -32,7 +32,7 @@ const App = () => {
         </form>
       ) : (
         <>
-          <p className="text-6xl font-semibold">{username}(X) vs Xenos Bot(O)</p>
+          <p className="text-6xl font-semibold max-md:text-3xl">{username}(X) vs Xenos Bot(O)</p>
           <Board
             boardArray={board}
             setBoardElement={setBoard}

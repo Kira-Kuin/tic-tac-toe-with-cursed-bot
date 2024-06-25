@@ -35,7 +35,7 @@ const Board = ({
   };
 
   return (
-    <div className="grid grid-cols-3 grid-rows-3 size-[500px] gap-3">
+    <div className="grid grid-cols-3 grid-rows-3 max-w-[500px] w-full aspect-[1/1] gap-3">
       {boardArray.map((item, index) => (
         <button
           onClick={() => updateTable(index)}
